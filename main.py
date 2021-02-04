@@ -5,6 +5,7 @@ import cv2
 Face_img = "face.jpg" #Declaring the img to the one located in your python file
 Face_Classifier = "Face.xml" #Face classifier xml file-this xml will check our image and check it against the data and if it passed then it will be classed as a face
 
+#https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml 
 
 FaceCheck = cv2.imread(Face_img)#open cv will take the image and read the pixel data which we can then use later imread = image read
 Grayscale = cv2.cvtColor(FaceCheck,cv2.COLOR_BGR2GRAY)#The reason to convert the file to gray scale is because it uses less data and when scanning the image it can be
